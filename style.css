@@ -1,0 +1,46 @@
+body{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: yellow;
+}
+.container{
+  display:flex;
+  flex-direction: column;
+
+width:40vw;
+height:20vw;
+align-items: center;
+justify-content:center ;
+
+}
+#button{
+  justify-content: center;
+align-items: center;
+}
+form{
+  /*background-color: pink;*/
+}
+
+#returnInfo{
+  display:flex;
+  justify-content: center;
+  background-color: yellow;
+
+  margin: 20px;
+  width: 350px;
+  height:80px;
+  border: 1px groove black;
+  font-size: 50px;
+}
+.well label{
+  font-size: 40px;
+}
+.well input{
+
+}
+.nav-wrapper{
+  background-color: orange;
+
+}
