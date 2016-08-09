@@ -4,7 +4,7 @@ $(document).ready(function(){
   var splicePokeName = 'rapidash';
   var pokeList;
 
-    $.get("https://galvanize-cors-proxy.herokuapp.com/https://pokeapi.co/api/v2/pokemon\/?limit=157&offset=0")
+    $.get("https://galvanize-cors-proxy.herokuapp.com/http://pokeapi.co/api/v2/pokemon\/?limit=157&offset=0")
     .then(function(pokemon){
       pokeList = pokemon.results;
       console.log(pokeList);
@@ -13,12 +13,10 @@ $(document).ready(function(){
 
    $('.well').submit(function(event){
       event.preventDefault();
-
       name = pokeList[pokePicker()].name;
       name = name.toLowerCase().split('');
 
       if(name.length===5){
-
          splicePokeName = name.splice(0,2).join('');
         }else if(name.length >=6){
          splicePokeName = name.splice(0,3).join('') ;
@@ -28,8 +26,6 @@ $(document).ready(function(){
         $('#returnInfo').text("You're a " + resultName)
         console.log(user)
   })
-
-
 
  function pokePicker(){
    return Math.floor(Math.random() * pokeList.length)
