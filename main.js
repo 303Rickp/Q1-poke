@@ -4,7 +4,7 @@ $(document).ready(function(){
   var splicePokeName = 'rapidash';
   var pokeList;
 
-    $.get("https://pokeapi.co/api/v2/pokemon\/?limit=157&offset=0")
+    $.get("https://galvanize-cors-proxy.herokuapp.com/https://pokeapi.co/api/v2/pokemon\/?limit=157&offset=0")
     .then(function(pokemon){
       pokeList = pokemon.results;
       console.log(pokeList);
