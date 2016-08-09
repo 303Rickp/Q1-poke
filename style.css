@@ -4,43 +4,100 @@ body{
   justify-content: center;
   padding-top: 20px;
   background-color: yellow;
+  background-image: url('http://cdn3.dualshockers.com/wp-content/uploads/2016/03/871597-pokemon-wallpaper.jpg');
+
 }
 .container{
   display:flex;
   flex-direction: column;
-
-width:40vw;
-height:20vw;
-align-items: center;
-justify-content:center ;
-
+  width:40vw;
+  height:20vw;
+  align-items: center;
+  justify-content:center ;
 }
+
 #button{
   justify-content: center;
-align-items: center;
+  align-items: center;
+  font-size: 10px;
+  color:white;
+  background-color: red;
 }
+
 form{
-  /*background-color: pink;*/
+  display: flex;
+  align-items: center;
 }
 
 #returnInfo{
   display:flex;
   justify-content: center;
-  background-color: yellow;
-
+  align-items: center;
+  background-color: rgba(255, 255, 0, 0.61);
   margin: 20px;
-  width: 350px;
+  width: 400px;
   height:80px;
   border: 1px groove black;
-  font-size: 50px;
+  font-size: 45px;
+  font-family: fantasy;
+  font-weight: bold;
 }
+
 .well label{
   font-size: 40px;
+  font-family: Book Antiqua;
 }
-.well input{
 
+.well input{
+  display: flex;
+  height: 30px;
+  width: 150px;
+  font-size: 50px;
 }
+
 .nav-wrapper{
   background-color: orange;
+}
 
+.well{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(245, 245, 245, 0.56);
+}
+
+.well #firstName{
+  height: 80px;
+  width: 350px;
+  text-align: center;
+}
+
+subButton #button{
+  height: 50px;
+}
+li.active:hoover{
+  background-color: blue;
+}
+
+.navbar-default {
+    background-color: rgb(76, 197, 126);
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #2b6ace;
+    color:yellow;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #777;
+    background-color: #e9f549;
+}
+
+.dropdown-toggle{
+    color: #555;
+    background-color: red;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: -15px;
+    color: red;
+    font-size: 30px;
 }

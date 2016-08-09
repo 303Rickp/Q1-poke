@@ -7,7 +7,7 @@ $(document).ready(function(){
     $.get("https://pokeapi.co/api/v2/pokemon\/?limit=157&offset=0")
     .then(function(pokemon){
       pokeList = pokemon.results;
-      //console.log(pokeList);
+      console.log(pokeList);
       return pokeList
 })
 
@@ -18,16 +18,17 @@ $(document).ready(function(){
       name = name.toLowerCase().split('');
 
       if(name.length===5){
+
          splicePokeName = name.splice(0,2).join('');
         }else if(name.length >=6){
-         splicePokeName = name.splice(0,3).join('');
+         splicePokeName = name.splice(0,3).join('') ;
      }
         var user = $('#firstName').val();
         var resultName = user.concat(splicePokeName)
-        $('#returnInfo').text(resultName)
+        $('#returnInfo').text("You're a " + resultName)
         console.log(user)
   })
-//})
+
 
 
  function pokePicker(){
