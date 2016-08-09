@@ -29,8 +29,6 @@ $(document).ready(function(){
         console.log(user)
   })
 
-
-
  function pokePicker(){
    return Math.floor(Math.random() * pokeList.length)
  }
